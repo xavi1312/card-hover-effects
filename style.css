@@ -19,11 +19,16 @@ body {
 }
 
 .container {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   position: relative;
 
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 3rem 0;
 }
 
 .card {
@@ -42,6 +47,8 @@ body {
   position: relative;
   transition: 0.5s;
 }
+
+/* FACE 1 */
 .card .face.face1 img {
   max-width: 100px;
 }
@@ -71,6 +78,7 @@ body {
   opacity: 1;
 }
 
+/* FACE 2 */
 .card .face.face2 {
   background-color: #fff;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
@@ -100,4 +108,12 @@ body {
 .card .face.face2 a:hover {
   background-color: var(--primary-color);
   color: #fff;
+}
+
+/* MEDIA QUERYS */
+@media screen and (min-width: 800px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
