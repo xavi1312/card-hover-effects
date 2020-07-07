@@ -1,4 +1,4 @@
-#Card hover effects
+# Card hover effects
 Simple efecto de despliegue de tarjetas solo con CSS.
 
 ## Tecnologias usadas
